@@ -30,7 +30,7 @@ main() {
     });
 
     test('score should be C', () {
-      expect(pokemonModel!.id, 'C');
+      expect(pokemonModel!.id, 1);
     });
 
   });
