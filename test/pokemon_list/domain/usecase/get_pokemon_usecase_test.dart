@@ -18,7 +18,7 @@ main() {
   group('Get pokemon UseCase', () {
     test('Use case should return a list of  pokemon', () async {
       List<Pokemon> list = [
-        Pokemon('', '', '')
+        Pokemon('', '', 1, '', '' as List<String>)
       ];
 
       when(repoMock!()).thenAnswer((_) async => list);

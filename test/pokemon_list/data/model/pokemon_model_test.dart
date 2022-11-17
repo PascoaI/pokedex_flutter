@@ -9,15 +9,15 @@ main() {
   setUpAll(() {
     response = {
       'name': 'A',
-      'url': 'B',
+      'num': 'B',
       'id': '1',
     };
 
     pokemonModel = PokemonModel.fromJson(response);
   });
 
-  group('Restaurant json parse', () {
-    test('RestaurantModel should be instance of RestaurantModel', () {
+  group('Pokemon json parse', () {
+    test('PokemonModel should be instance of PokemonModel', () {
       expect(pokemonModel, isA<PokemonModel>());
     });
 
@@ -26,7 +26,7 @@ main() {
     });
 
     test('logo should be B', () {
-      expect(pokemonModel!.url, 'B');
+      expect(pokemonModel!.num, 'B');
     });
 
     test('score should be C', () {

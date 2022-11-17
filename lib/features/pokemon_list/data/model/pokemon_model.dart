@@ -12,7 +12,7 @@ class PokemonModel extends Pokemon implements BaseModel {
         json['num'] ?? '',
         json['id'] ?? '',
         json['img'] ?? '',
-        (json['type']  as List<dynamic>).map((e) => e as String).toList()
+        (json['type']  as List<String>).map((e) => e).toList()
     );
 
     return model;
@@ -31,20 +31,3 @@ class PokemonModel extends Pokemon implements BaseModel {
     return map;
   }
 }
-// class PokemonListing {
-//   final int id;
-//   final String name;
-// //
-//   String get imageUrl =>
-//       'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$id.png';
-//
-//   PokemonListing({@required this.id, @required this.name});
-//
-//   factory PokemonListing.fromJson(Map<String, dynamic> json) {
-//     final name = json['name'];
-//     final url = json['url'] as String;
-//     final id = int.parse(url.split('/')[6]);
-//
-//     return PokemonListing(id: id, name: name);
-//   }
-// }

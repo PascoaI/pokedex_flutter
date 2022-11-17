@@ -16,9 +16,9 @@ main() {
   });
 
   group('Get pokemon Repository', () {
-    test('Use case should return a list of  Restaurants', () async {
+    test('Use case should return a list of  pokemons', () async {
       List<Pokemon> list = [
-        Pokemon('', '', '')
+        Pokemon('', '', 1 , '', '' as List<String>)
       ];
 
       when(dataSourceMock!(any)).thenAnswer(((_) async => list));

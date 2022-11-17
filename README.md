@@ -15,3 +15,6 @@ https://github.com/PascoaI/Pokedex-Flutter.git
 Vá para a raiz do projeto na sua IDE, e execute o seguinte comando no console para obter as dependências necessárias:
 
 -flutter pub get
+
+
+=)

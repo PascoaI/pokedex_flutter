@@ -17,7 +17,7 @@ void main() async {
   group('pokemon List Bloc', () {
     test('onLoadpokemon should return list of pokemon', () async {
       List<Pokemon> list = [
-        Pokemon('', '', '')
+        Pokemon('', '', 1, '', '' as List<String>)
       ];
 
       when(useCase()).thenAnswer((_) async => list);

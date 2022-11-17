@@ -30,15 +30,12 @@ void main() {
       'data': [
         {
           'name': 'A',
-          'logo': 'B',
-          'score': 'C',
-          'colorScore': 'D',
-          'delivery': 'E',
-          'cousine': 'F',
-          'photoPlate': 'G',
-          'plateName': 'H',
-          'description': 'I',
-          'price': 'J'
+          'num': 'B',
+          'id': 1,
+          'img': 'D',
+          'type': [
+            'E'
+          ]
         }
       ]
     };
